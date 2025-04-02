@@ -1,12 +1,13 @@
     public class Main {
     public static void main(String[] args) {
-        int bananasGr = 5 * 80;
-        int milkGr = 2 * 105;
-        int iceCreamGr = 2 * 100;
-        int eggsGr = 4 * 70;
-        int weightSportBreakfastGr = bananasGr + milkGr + iceCreamGr + eggsGr;
-        float weightSportBreakfastKg = weightSportBreakfastGr * 0.001f;
-        System.out.println("Вес спортзавтрака в граммах "+weightSportBreakfastGr);
-        System.out.println("Вес спортзавтрака в килограммах "+weightSportBreakfastKg);
+        int loseWeight = 7;
+        float loseWeightInADay1 = 250 * 0.001f;
+        float loseWeightInADay2 = 500 * 0.001f;
+        float daysFor250 = loseWeight / loseWeightInADay1;
+        float daysFor500 = loseWeight / loseWeightInADay2;
+        float daysOnAverage = loseWeight / ((loseWeightInADay1+loseWeightInADay2) / 2);
+        System.out.println(daysFor250+" дней потребуется при похудении на 250 грамм");
+        System.out.println(daysFor500+" дней потребуется при похудении на 500 грамм");
+        System.out.println(daysOnAverage+" дней потребуется в среднем");
     }
 }
