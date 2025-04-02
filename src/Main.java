@@ -1,13 +1,22 @@
     public class Main {
     public static void main(String[] args) {
-        int loseWeight = 7;
-        float loseWeightInADay1 = 250 * 0.001f;
-        float loseWeightInADay2 = 500 * 0.001f;
-        float daysFor250 = loseWeight / loseWeightInADay1;
-        float daysFor500 = loseWeight / loseWeightInADay2;
-        float daysOnAverage = loseWeight / ((loseWeightInADay1+loseWeightInADay2) / 2);
-        System.out.println(daysFor250+" дней потребуется при похудении на 250 грамм");
-        System.out.println(daysFor500+" дней потребуется при похудении на 500 грамм");
-        System.out.println(daysOnAverage+" дней потребуется в среднем");
+        int wagesMary = 67760;
+        int wagesDenis = 83690;
+        int wagesKristina = 76230;
+        int wagesPerYearMary = wagesMary * 12;
+        int wagesPerYearDenis = wagesDenis * 12;
+        int wagesPerYearKristina = wagesKristina * 12;
+        float increaseWagesMary = wagesMary + (wagesMary * 0.1f);
+        float increaseWagesDenis = wagesDenis + (wagesDenis * 0.1f);
+        float increaseWagesKristina = wagesKristina + (wagesKristina * 0.1f);
+        float newWagesPerYearMary = increaseWagesMary * 12;
+        float newWagesPerYearDenis = increaseWagesDenis * 12;
+        float newWagesPerYearKristina = increaseWagesKristina * 12;
+        float differenceMary = newWagesPerYearMary - wagesPerYearMary;
+        float differenceDenis = newWagesPerYearDenis - wagesPerYearDenis;
+        float differenceKristina = newWagesPerYearKristina - wagesPerYearKristina;
+        System.out.println("Маша теперь получает "+increaseWagesMary+" рублей. Годовой доход вырос на "+differenceMary+" рублей.");
+        System.out.println("Маша теперь получает "+increaseWagesDenis+" рублей. Годовой доход вырос на "+differenceDenis+" рублей.");
+        System.out.println("Маша теперь получает "+increaseWagesKristina+" рублей. Годовой доход вырос на "+differenceKristina+" рублей.");
     }
 }
